@@ -12,7 +12,11 @@
       />
       <link rel="stylesheet" href="./css/style.css" />
    </head>
-
+   <style>
+      * {
+         overflow-x: hidden;
+      }
+   </style>
    <body>
       <header
          class="flex justify-between px-10 md:px-0 md:justify-around h-20 items-center"
@@ -274,7 +278,7 @@
                <img
                   src="./images/shoes.png"
                   alt="landing"
-                  class="h-screen md:w-1/2 w-screen"
+                  class="h-screen md:w-1/2 w-screen "
                />
                <section
                   class="flex flex-col h-screen w-screen md:w-1/2 justify-center items-center absolute md:relative"
@@ -293,7 +297,9 @@
                </section>
             </section>
          </section>
-         <section class="md:flex md:items-center md:justify-between flex-col flex md:flex-row mt-10">
+         <section
+            class="md:flex md:items-center md:justify-between flex-col flex md:flex-row mt-10"
+         >
             <div class="promo">
                <h2>PROMO</h2>
                <img
@@ -307,10 +313,13 @@
                </p>
                <small>Promo from April 15-25, 2021</small>
             </div>
-            <div id="middle" class="h-96 flex items-center justify-around w-96">
+            <div
+               id="middle"
+               class="md:h-96 md:flex md:items-center md:w-96 md:justify-between md:flex-row flex-col"
+            >
                <div
                   id="first"
-                  class="flex items-center justify-between flex-col h-52"
+                  class="md:flex md:items-center md:h-52 md:justify-between flex-col md:flex-col"
                >
                   <h2>QUICK LINKS</h2>
                   <p class="text-sm text-gray-700">Shop online</p>
@@ -320,7 +329,7 @@
                </div>
                <div
                   id="first"
-                  class="flex items-center justify-between flex-col h-32"
+                  class="md:flex md:items-center h-32 md:flex-col md:justify-between flex-col"
                >
                   <p class="text-sm text-gray-700">Commerce</p>
                   <p class="text-sm text-gray-700">Dropshoping</p>
@@ -331,14 +340,14 @@
                </div>
                <div
                   id="first"
-                  class="flex items-center justify-between flex-col h-32"
+                  class="md:flex md:items-center h-32 md:flex-col md:justify-between flex-col"
                >
                   <p class="text-sm text-gray-700">Point of sale</p>
                   <p class="text-sm text-gray-700">Hard ware</p>
                   <p class="text-sm text-gray-700">Soft ware</p>
                </div>
             </div>
-            <div id="contact" class=" leading-8">
+            <div id="contact" class="leading-8 w-96">
                <h2>CONTACT INFO</h2>
                <div class="flex">
                   <i class="bi bi-geo-alt-fill text-red-600"></i>
@@ -364,7 +373,7 @@
 
                   <button
                      type="submit"
-                     class="h-10 w-20 bg-red-700 rounded-3lx text-white ml-40 mt-2 absolute"
+                     class="h-10 w-20 bg-red-700  text-white md:ml-40 md:mt-2 ml-40 mt-2 absolute"
                   >
                      Send
                   </button>
@@ -372,6 +381,8 @@
             </div>
          </section>
       </section>
-      <footer class="text-center text-gray-800" >Copyright @2023 All rights reserved Mr. Emmanuel</footer>
+      <footer class="md:text-center text-center text-gray-800">
+         Copyright @2023 All rights reserved Mr. Emmanuel
+      </footer>
    </body>
 </html>
